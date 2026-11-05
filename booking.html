@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IPL Ticket Booking</title>
+</head>
+<body>
+
+<h1>IPL Ticket Booking Form</h1>
+
+<form>
+
+    <label>Name:</label>
+    <input type="text"
+           name="name"
+           required
+           minlength="3"
+           maxlength="30">
+    <br><br>
+
+    <label>Email:</label>
+    <input type="email"
+           name="email"
+           required>
+    <br><br>
+
+    <label>Phone Number:</label>
+    <input type="tel"
+           name="phone"
+           required
+           minlength="10"
+           maxlength="10">
+    <br><br>
+
+    <label>Select Match:</label>
+    <select required>
+        <option value="">Choose Match</option>
+        <option>RCB vs CSK</option>
+        <option>MI vs KKR</option>
+        <option>SRH vs DC</option>
+        <option>GT vs RR</option>
+    </select>
+    <br><br>
+
+    <label>Stand Category:</label>
+    <select required>
+        <option value="">Choose Stand</option>
+        <option>General</option>
+        <option>Premium</option>
+        <option>VIP</option>
+    </select>
+    <br><br>
+
+    <label>Number of Tickets:</label>
+    <input type="number"
+           min="1"
+           max="10"
+           required>
+    <br><br>
+
+    <label>Additional Preference:</label><br>
+
+    <input type="checkbox"> Parking Required<br>
+    <input type="checkbox"> Food Coupon<br>
+    <input type="checkbox"> Merchandise Kit<br><br>
+
+    <label>Payment Method:</label><br>
+
+    <input type="radio" name="payment"> UPI
+    <input type="radio" name="payment"> Card
+    <input type="radio" name="payment"> Net Banking
+
+    <br><br>
+
+    <input type="submit" value="Book Ticket">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
