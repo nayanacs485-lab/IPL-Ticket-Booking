@@ -76,3 +76,19 @@ footer{
     text-align:center;
     padding:15px;
 }
+#toast{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+.summary-card{
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+}
