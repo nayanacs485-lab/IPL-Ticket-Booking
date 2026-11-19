@@ -89,3 +89,51 @@ matchSelect.addEventListener("change", updateSummary);
 standSelect.addEventListener("change", updateSummary);
 
 quantityInput.addEventListener("change", updateSummary);
+const filter = document.getElementById("teamFilter");
+
+filter.addEventListener("change", () => {
+
+  const selectedTeam = filter.value;
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach(card => {
+
+    if (
+      selectedTeam === "all" ||
+      card.dataset.team === selectedTeam
+    ) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+
+});
+const matchContainer =
+  document.getElementById("matchContainer");
+
+document
+  .getElementById("gridBtn")
+  .addEventListener("click", () => {
+
+    matchContainer.style.display = "grid";
+
+    matchContainer.style.gridTemplateColumns =
+      "repeat(3,1fr)";
+  });
+
+document
+  .getElementById("listBtn")
+  .addEventListener("click", () => {
+
+    matchContainer.style.display = "block";
+  });
+  const hamburger =
+  document.getElementById("hamburger");
+
+const navLinks =
+  document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});

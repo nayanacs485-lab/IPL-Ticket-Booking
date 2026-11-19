@@ -310,3 +310,58 @@ id="booking-form"
 <div id="toast"></div>
 <link rel="stylesheet" href="styles.css">
 <script src="app.js"></script>
+<header>
+  <nav class="navbar">
+    <div class="logo">IPL 2026</div>
+
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Matches</a></li>
+      <li><a href="#">Teams</a></li>
+      <li><a href="#">Guidelines</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <button id="hamburger">☰</button>
+  </nav>
+</header>
+<section class="matches">
+
+  <h2>Match Schedule</h2>
+
+  <select id="teamFilter">
+    <option value="all">All Teams</option>
+    <option value="RCB">RCB</option>
+    <option value="CSK">CSK</option>
+    <option value="MI">MI</option>
+  </select>
+
+  <button id="gridBtn">Grid View</button>
+  <button id="listBtn">List View</button>
+
+  <div class="match-grid" id="matchContainer">
+
+    <div class="card" data-team="RCB">
+      RCB vs CSK
+    </div>
+
+    <div class="card" data-team="CSK">
+      CSK vs MI
+    </div>
+
+    <div class="card" data-team="MI">
+      MI vs RCB
+    </div>
+
+  </div>
+
+</section>
+<section class="guidelines">
+
+  <div class="guide">Follow Fair Play Rules</div>
+
+  <div class="guide">Carry Match Tickets</div>
+
+  <div class="guide">Respect Players and Officials</div>
+
+</section>
